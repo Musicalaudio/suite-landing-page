@@ -1,64 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="./assets/favicon-32x32.png" />
-        <link rel="stylesheet" href="reset.css" />
-        <link rel="stylesheet" href="main.css" />
-        <title>Frontend Mentor | Suite landing page</title>
-    </head>
-    <body>
-        <header>
-            <img src="./assets/logo.svg" alt="Suite logo" />
-            <a>Request Beta Access</a>
-        </header>
-        <section>
-            <div>
-                <h1>A super solution for your business.</h1>
-                <p>
-                    Our marketing and sales automations help you scale your
-                    outreach to get more leads for your company.
-                </p>
-                <a>Request Beta Access</a>
-            </div>
-            <img
-                src="./assets/image-hero-portrait.webp"
-                alt="touch screen phone" />
-            <div>
-                <span>
-                    2K+<br />
-                    Companies
-                </span>
-                <span>
-                    8<br />
-                    Languages
-                </span>
-                <span>
-                    1.2M<br />
-                    Leads
-                </span>
-            </div>
-        </section>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png" />
 
-        <section>
-            <h2>It just works.</h2>
-            <p>
-                “I really like how it is an all-in-one solution that handle many
-                of the tasks that you would normally need separate tools to do
-                the same job. This thing is a miracle worker.”
-            </p>
-            <p>Jeremy Robinson</p>
-            <p>CMO, Fylo</p>
-        </section>
-
-        <footer>
-            <p>Copyright - Suite</p>
-        </footer>
-    </body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Frontend Mentor | Suite landing page</title>
+  </head>
+  <body class="[ flow ]">
+    <header class="[ wrapper ] [ pad-block-base space-between wrap ]">
+      <a class="logo" href="#">
+        <img src="./assets/logo.svg" alt="Suite logo" />
+      </a>
+      <a class="button button__secondary">Request Beta Access</a>
+    </header>
+    <main class="flow">
+      <section class="[ hero ] [ wrapper ] [ flow ]">
+        <div class="[ hero__desc ] [ flow ]">
+          <h1 class="heading-l">A super solution for your business.</h1>
+          <p>
+            Our marketing and sales automations help you scale your outreach to
+            get more leads for your company.
+          </p>
+          <a class="[ button button__primary ]" href="#">Request Beta Access</a>
+        </div>
+        <picture class="hero__img">
+          <source
+            class="hero__img--landscape"
+            srcset="./assets/image-hero-landscape.webp"
+            media="(max-width: 48rem)" />
+          <img
+            src="./assets/image-hero-portrait.webp"
+            alt="touch screen phone" />
+        </picture>
+        <div class="[ stats ] [ text-center flow ]">
+          <p>
+            <span class="heading-l">2K+</span><br />
+            <span class="heading-s">Companies</span>
+          </p>
+          <p>
+            <span class="heading-l">8</span><br />
+            <span class="heading-s">Languages</span>
+          </p>
+          <p>
+            <span class="heading-l">1.2M</span><br />
+            <span class="heading-s">Leads</span>
+          </p>
+        </div>
+      </section>
+      <!-- <section class="quote"> -->
+      <div class="[ quote quote-card ] [ text-center ]">
+        <picture>
+          <source
+            srcset="./assets/image-jeremy-large.webp"
+            media="( min-width: 90rem )" />
+          <img
+            class="quote-card__quoter"
+            src="./assets/image-jeremy-small.webp"
+            alt="CEO Jeremy Robinson looking at his mobile phone" />
+        </picture>
+        <div class="quote-card__motif"></div>
+        <div class="[ wrapper ] [ flow ]" style="--gutter: 2.5rem">
+          <h2 class="heading-l">It just works.</h2>
+          <p class="quote-card__text">
+            “I really like how it is an all-in-one solution that handle many of
+            the tasks that you would normally need separate tools to do the same
+            job. This thing is a miracle worker.”
+          </p>
+          <div>
+            <p class="heading-m">Jeremy Robinson</p>
+            <p class="heading-s">CMO, Fylo</p>
+          </div>
+        </div>
+      </div>
+      <!-- </section> -->
+    </main>
+    <footer class="[ flex ] [ pad-block-base ]">
+      <div class="[ footer__nav ] [ wrapper ] [ space-between wrap flex-end ]">
+        <img class="logo" src="./assets/logo.svg" alt="Suite logo" />
+        <p>Copyright - Suite</p>
+        <ul class="socials space-between align-center">
+          <li>
+            <a href="#">
+              <img
+                src="./assets/icon-facebook.svg"
+                alt="link to Suite's facebook profile" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="./assets/icon-instagram.svg"
+                alt="link to Suite's instagram profile" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="./assets/icon-twitter.svg"
+                alt="link to Suite's twitter profile" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>
