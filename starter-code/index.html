@@ -26,26 +26,29 @@
       </a>
       <a class="button button__secondary">Request Beta Access</a>
     </header>
-    <main class="flow">
-      <section class="[ hero ] [ wrapper ] [ flow ]">
+    <main class="">
+      <section class="[ hero ] [ wrapper ]">
         <div class="[ hero__desc ] [ flow ]">
-          <h1 class="heading-l">A super solution for your business.</h1>
+          <h1 class="heading-xl">
+            <span class="fw-regular">A</span> super solution
+            <span class="fw-regular">for your</span> business.
+          </h1>
           <p>
             Our marketing and sales automations help you scale your outreach to
             get more leads for your company.
           </p>
           <a class="[ button button__primary ]" href="#">Request Beta Access</a>
         </div>
-        <picture class="hero__img">
+        <picture>
           <source
-            class="hero__img--landscape"
             srcset="./assets/image-hero-landscape.webp"
             media="(max-width: 48rem)" />
           <img
+            class="hero__img"
             src="./assets/image-hero-portrait.webp"
             alt="touch screen phone" />
         </picture>
-        <div class="[ stats ] [ text-center flow ]">
+        <div class="[ stats ] [ text-center ]">
           <p>
             <span class="heading-l">2K+</span><br />
             <span class="heading-s">Companies</span>
@@ -60,32 +63,43 @@
           </p>
         </div>
       </section>
-      <!-- <section class="quote"> -->
-      <div class="[ quote quote-card ] [ text-center ]">
-        <picture>
+
+      <section class="quote">
+        <picture class="quote-img">
           <source
             srcset="./assets/image-jeremy-large.webp"
-            media="( min-width: 90rem )" />
+            media="(min-width: 90rem)" />
           <img
-            class="quote-card__quoter"
-            src="./assets/image-jeremy-small.webp"
-            alt="CEO Jeremy Robinson looking at his mobile phone" />
+            class=""
+            src="assets/image-jeremy-small.webp"
+            alt="Jeremy Small, our CEO on his phone" />
         </picture>
-        <div class="quote-card__motif"></div>
-        <div class="[ wrapper ] [ flow ]" style="--gutter: 2.5rem">
-          <h2 class="heading-l">It just works.</h2>
-          <p class="quote-card__text">
-            “I really like how it is an all-in-one solution that handle many of
-            the tasks that you would normally need separate tools to do the same
-            job. This thing is a miracle worker.”
-          </p>
-          <div>
-            <p class="heading-m">Jeremy Robinson</p>
-            <p class="heading-s">CMO, Fylo</p>
-          </div>
+        <div class="quote-card">
+          <img
+            class="quote-card__motif"
+            src="./assets/pattern-curved-line-2.svg"
+            alt="decorative curved line" />
+
+          <figure class="quote-card__desc">
+            <h2 class="heading-l">
+              <span class="fw-regular">It just</span> works.</h2>
+            </h2>
+            <blockquote cite="">
+              <p class="quote-card__text">
+                "I really like how it is an all-in-one solution that handles
+                many of the tasks that you would normally need seperate tools to
+                do the same job. This thing is a miracle worker."
+              </p>
+            </blockquote>
+            <figcaption>
+              <cite>
+                <span class="heading-m">Jeremy Robinson</span><br />
+                <span class="heading-s">CMO, Fylo</span>
+              </cite>
+            </figcaption>
+          </figure>
         </div>
-      </div>
-      <!-- </section> -->
+      </section>
     </main>
     <footer class="[ flex ] [ pad-block-base ]">
       <div class="[ footer__nav ] [ wrapper ] [ space-between wrap flex-end ]">
