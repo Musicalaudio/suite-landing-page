@@ -26,8 +26,9 @@
       </a>
       <a class="button button__secondary">Request Beta Access</a>
     </header>
-    <main class="">
-      <section class="[ hero ] [ wrapper ]">
+    <main class="flow" style="--gutter: clamp(3.50rem, calc(2.80rem + 3.00vw), 5.50rem)">
+      <section class="[ hero ] [ wrapper ] [ flow ]">
+        <!-- <img class="hero__motif"  src="./assets/pattern-curved-line-1.svg" alt="decorative downwards curved line" aria-hidden="true"> -->
         <div class="[ hero__desc ] [ flow ]">
           <h1 class="heading-xl">
             <span class="fw-regular">A</span> super solution
@@ -68,18 +69,19 @@
         <picture class="quote-img">
           <source
             srcset="./assets/image-jeremy-large.webp"
-            media="(min-width: 90rem)" />
+            media="(min-width: 91rem)" />
           <img
             class=""
             src="assets/image-jeremy-small.webp"
             alt="Jeremy Small, our CEO on his phone" />
         </picture>
-        <div class="quote-card">
-          <img
+        <img
             class="quote-card__motif"
             src="./assets/pattern-curved-line-2.svg"
-            alt="decorative curved line" />
-
+            alt="decorative curved line" 
+            aria-hidden="true"
+        />
+        <div class="quote-card">
           <figure class="quote-card__desc">
             <h2 class="heading-l">
               <span class="fw-regular">It just</span> works.</h2>
